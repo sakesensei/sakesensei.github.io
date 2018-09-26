@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LightTest.png-83589a3b50aa54d1e33cc7214079df26.stex"
+path="res://.import/LightTest.png-3a14ede2464c889c001241efe0876799.stex"
 
 [deps]
 
-source_file="res://bin/html5/sakesensei.github.io/LightTest.png"
-dest_files=[ "res://.import/LightTest.png-83589a3b50aa54d1e33cc7214079df26.stex" ]
+source_file="res://bin/html5/LightTest.png"
+dest_files=[ "res://.import/LightTest.png-3a14ede2464c889c001241efe0876799.stex" ]
 
 [params]
 
