@@ -4,12 +4,31 @@
 	<title>Sakesensei</title>
 	<style>
 		body {
-			background: linear-gradient(to bottom right, #f2f2f2, #d9d9d9); /* a soft grey gradient */
+			margin: 0;
+			padding: 0;
+			background-color: black;
+		}
+		
+		#text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: move 4s infinite;
+		}
+		
+		@keyframes move {
+			0% { top: 50%; left: 50%; }
+			25% { top: 10%; left: 50%; }
+			50% { top: 10%; left: 10%; }
+			75% { top: 50%; left: 10%; }
+			100% { top: 50%; left: 50%; }
 		}
 	</style>
 </head>
 <body>
-	<h1>Welcome to my page!</h1>
-	<p>This is a simple example of a page with a soft grey gradient background.</p>
+	<div id="text">
+		<h1>Not a DVD Player</h1>
+	</div>
 </body>
 </html>
