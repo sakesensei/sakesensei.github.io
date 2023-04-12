@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sakesensei</title>
+	<title>DVD Player Screensaver</title>
 	<style>
 		body {
-			margin: 0;
-			padding: 0;
 			background-color: black;
+			overflow: hidden;
 		}
-		
-		#text {
+		.text {
+			font-size: 5rem;
+			font-weight: bold;
 			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			animation: move 4s infinite;
+			color: #FF00FF;
+			animation: move 5s linear infinite;
+			transform: rotate(-45deg);
+			white-space: nowrap;
 		}
-		
 		@keyframes move {
-			0% { top: 50%; left: 50%; }
-			25% { top: 10%; left: 50%; }
-			50% { top: 10%; left: 10%; }
-			75% { top: 50%; left: 10%; }
-			100% { top: 50%; left: 50%; }
+			0% {
+				top: 0;
+				left: 0;
+			}
+			25% {
+				top: 0;
+				left: calc(100% - 200px);
+			}
+			50% {
+				top: calc(100% - 100px);
+				left: calc(100% - 200px);
+			}
+			75% {
+				top: calc(100% - 100px);
+				left: 0;
+			}
+			100% {
+				top: 0;
+				left: 0;
+			}
 		}
 	</style>
 </head>
 <body>
-	<div id="text">
-		<h1>Not a DVD Player</h1>
-	</div>
+	<div class="text">DVD PLAYER</div>
 </body>
 </html>
